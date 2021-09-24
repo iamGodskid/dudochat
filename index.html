@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.6"/>
+    <script src="chat.js"></script>
+    <style type="text/css">
+    body{
+height: 100%;
+width: 100%;
+background: black;
+    }
+div{
+    box-sizing: border-box;
+    margin-top: 50px;
+    height: 300px;
+    width:70vh;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 4px 3px 4px dodgerblue;
+    padding: 15px;
+}
+label{
+    color: dodgerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    text-shadow: -3px 2px 6px white;
+    text-align: center;
+    
+}
+input{
+    height: 30px;
+    width: 80%;
+    color: black;
+    background: cyan;
+    border-bottom-left-radius: 7px;
+    margin-bottom: 10px;
+    border: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    height: 30px;
+    width: 70px;
+    background: dodgerblue;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+    <form name="form" action="reg.php" method="POST">
+        <label><h3>ENTER A USERNAME</h3></label>
+        <input type="text" name="usertag" placeholder="Enter a Username" maxlength="10"/><br/>
+        <button onclick="take()" type="submit" id="btn">Procceed</button>
+    </form>
+    </div></center>
+
+</body>
+</html>
